@@ -276,6 +276,7 @@ alias[gui:<gui_type>] = {
     #BACKGROUND
     ## cardinality = 0..1
     spriteType = enum[gui_spriteType]
+    ## color_type = hsv
     ## cardinality = 0..1
     color = {
         ## cardinality = 3..4
@@ -461,6 +462,7 @@ alias[gui:enum[gui_hardcoded]] = {
     #BACKGROUND
     ## cardinality = 0..1
     spriteType = enum[gui_spriteType]
+    ## color_type = hsv
     ## cardinality = 0..1
     color = {
         ## cardinality = 3..4
@@ -660,6 +662,7 @@ single_alias[all_gui] = {
     #BACKGROUND
     ## cardinality = 0..1
     spriteType = enum[gui_spriteType]
+    ## color_type = hsv
     ## cardinality = 0..1
     color = {
         ## cardinality = 3..4

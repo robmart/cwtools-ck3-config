@@ -27,6 +27,7 @@ activity = {
 
     # TODO: alias for colour; probably not as rigid as activities make it look (see interface files for comp.)
     # TODO: figure out
+    ## color_type = hsv
     color = {
         ## cardinality = 4..4
         float
