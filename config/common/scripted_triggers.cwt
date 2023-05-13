@@ -3,18 +3,14 @@ alias[trigger:<event_scripted_trigger>] = bool
 
 ### The scripted trigger will draw the value of the right clause via $left_clause$.
 alias[trigger:<scripted_trigger>] = {
-	## cardinality = 1..inf
-	$parameter = scalar
-	## cardinality = 1..inf
-	$parameter = scope_field
+	## cardinality = 0..inf
+	$parameter = $parameter_value
 }
 
 ### The scripted trigger will draw the value of the right clause via $left_clause$.
 alias[trigger:<event_scripted_trigger>] = {
-	## cardinality = 1..inf
-	$parameter = scalar
-	## cardinality = 1..inf
-	$parameter = scope_field
+	## cardinality = 0..inf
+	$parameter = $parameter_value
 }
 
 types = {
