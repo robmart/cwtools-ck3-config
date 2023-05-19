@@ -89,9 +89,8 @@ alias[score_operation:if] = single_alias_right[score_conditional]
 alias[score_operation:else_if] = single_alias_right[score_conditional]
 alias[score_operation:else] = single_alias_right[score_conditional]
 single_alias[score_conditional] = {
-    limit = {
-        alias_name[trigger] = alias_match_left[trigger]
-    }
+    ## cardinality = ~1..1
+    limit = { alias_name[trigger] = alias_match_left[trigger] }
     ## cardinality = 1..inf
     alias_name[arithmetic_operation] = alias_match_left[arithmetic_operation]
     ## cardinality = 0..1
