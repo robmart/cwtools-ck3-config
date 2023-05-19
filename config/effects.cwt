@@ -89,14 +89,15 @@ alias[effect:add_truce_one_way] = {
 ### Exposes the scope secret
 alias[effect:expose_secret] = scope[character]
 
-### Switch on a trigger for the evaluation of another trigger with an optional fallback trigger. switch = { 	trigger = simple_assign_trigger 	case_1 = { <effects> } 	case_2 = { <effects> } 	case_n = { <effects> } 	fallback = { <effects> }
+### Switch on a trigger for the evaluation of another trigger with an optional fallback trigger.
 alias[effect:switch] = {
     trigger = alias_keys_field[trigger]
     ## cardinality = 0..inf
-	scalar = {
-		## cardinality = 0..inf
-		alias_name[effect] = alias_match_left[effect]
-	}
+    # for key of this property, config will be overridden by:
+    # icu.windea.pls.lang.config.impl.ParadoxSwitchCaseOverriddenConfigProvider
+    scalar = { alias_name[trigger] = alias_match_left[trigger] }
+    ## cardinality = 0..1
+    fallback = { alias_name[trigger] = alias_match_left[trigger] }
 }
 
 ### Recalculates the effect of a scripted relation recalculate_scripted_relation= friend

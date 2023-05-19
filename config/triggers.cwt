@@ -101,8 +101,16 @@ alias[trigger:is_defender_in_war] = replace_me
 ### is the target title de jure liege or above?
 alias[trigger:target_is_de_jure_liege_or_above] = scope[landed_title]
 
-### Switch on a trigger for the evaluation of another trigger with an optional fallback trigger. switch = { 	trigger = simple_assign_trigger 	case_1 = { <triggers> } 	case_2 = { <triggers> } 	case_n = { <triggers> } 	fallback = { <triggers> }
-alias[trigger:switch] = replace_me
+### Switch on a trigger for the evaluation of another trigger with an optional fallback trigger.
+alias[trigger:switch] = {
+    trigger = alias_keys_field[trigger]
+    ## cardinality = ~1..inf
+    # for key of this property, config will be overridden by:
+    # icu.windea.pls.lang.config.impl.ParadoxSwitchCaseOverriddenConfigProvider
+    scalar = { alias_name[trigger] = alias_match_left[trigger] }
+    ## cardinality = ~1..1
+    fallback = { alias_name[trigger] = alias_match_left[trigger] }
+}
 
 ### Is the character a parent of the target character?
 alias[trigger:is_parent_of] = scope[character]
