@@ -95,9 +95,9 @@ alias[effect:switch] = {
     ## cardinality = 0..inf
     # for key of this property, config will be overridden by:
     # icu.windea.pls.lang.config.impl.ParadoxSwitchCaseOverriddenConfigProvider
-    scalar = { alias_name[trigger] = alias_match_left[trigger] }
+    scalar = { alias_name[effect] = alias_match_left[effect] }
     ## cardinality = 0..1
-    fallback = { alias_name[trigger] = alias_match_left[trigger] }
+    fallback = { alias_name[effect] = alias_match_left[effect] }
 }
 
 ### Recalculates the effect of a scripted relation recalculate_scripted_relation= friend
