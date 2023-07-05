@@ -1,6 +1,10 @@
 types = {
     type[innovation] = {
         path = "game/common/culture/innovations"
+        images = {
+            ## primary
+            icon = icon # filepath[gfx/interface/icons/culture_innovations]
+        }
     }
 }
 
@@ -9,54 +13,54 @@ innovation = {
     culture_era = <era>
     ### Innovation group. Can be: culture_group_military, culture_group_civic or culture_group_regional.
     group = enum[innovation_group]
-    ## cardinality = 0..1
     ### Path to the icon to show. If not set will use the default icon defined in NGameIcons::DEFAULT_CULTURE_INNOVATION_TYPE_ICON_PATH
+    ## cardinality = 0..1
     icon = filepath[gfx/interface/icons/culture_innovations]
 
-    ## cardinality = 0..1
     ### Region where this innovation can start getting base progress. Empty means anywhere.
+    ## cardinality = 0..1
     region = <region>
-    ## cardinality = 0..1
     ### Trigger to check if it can be unlocked by the culture. In contrast to can_progress it will be hidden otherwise. Scope: culture Default: always = yes
-    potential = single_alias_right[trigger_clause]
     ## cardinality = 0..1
+    potential = single_alias_right[trigger_clause]
     ### To check if it can start being exposed. Scope: culture Default: always = yes
+    ## cardinality = 0..1
     can_progress = single_alias_right[trigger_clause]
 
-    ## cardinality = 0..inf
     ### Key of a building that can be unlocked. There can be more than one. This is only to show on the tooltip, it has to be maulually blocked on the object itself.
+    ## cardinality = 0..inf
     unlock_building = <building>
-    ## cardinality = 0..inf
     ### Key of a decicion that can be unlocked. There can be more than one. This is only to show on the tooltip, it has to be maulually blocked on the object itself.
+    ## cardinality = 0..inf
     unlock_decision = <decision>
-    ## cardinality = 0..inf
     ### Key of a casus belli that can be unlocked. There can be more than one. This is only to show on the tooltip, it has to be maulually blocked on the object itself.
+    ## cardinality = 0..inf
     unlock_casus_belli = <casus_belli>
-    ## cardinality = 0..inf
     ### Key of a regiment that can be unlocked. There can be more than one. Actually does unlock the MaA.
-    unlock_maa = <maa_type>
     ## cardinality = 0..inf
+    unlock_maa = <maa_type>
     ### Key of a law that can be unlocked. There can be more than one. This is only to show on the tooltip, it has to be maulually blocked on the object itself.
+    ## cardinality = 0..inf
     unlock_law = <law>
 
     # TODO: Is more than one maa_upgrade actually supported?
-    ## cardinality = 0..inf
     ### Modifies the values of one of the base MaA types.
+    ## cardinality = 0..inf
     maa_upgrade = single_alias_right[maa_upgrade]
 
-    ## cardinality = 0..inf
     ### A custom effect description that will be added to the list of effects.
+    ## cardinality = 0..inf
     custom = localisation
 
-    ## cardinality = 0..1
     ### Modifiers of this culture era. The culture will stash this modifier.
+    ## cardinality = 0..1
     modifier = {
         ## cardinality = 0..inf
         alias_name[modifier] = alias_match_left[modifier]
     }
 
-    ## cardinality = 0..inf
     ### Optional flag, relevant for the has_all_innovations trigger. Can list any number of flags for each innovation.
+    ## cardinality = 0..inf
     flag = scalar
 }
 

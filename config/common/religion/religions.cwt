@@ -1,6 +1,12 @@
 types = {
     type[religion] = {
         path = "game/common/religion/religions"
+        images = {
+            ## optional
+            graphical_faith = graphical_faith # filepath
+            ## optional
+            doctrine_background_icon = doctrine_background_icon # filepath[gfx/interface/icons/faith_doctrines]
+        }
     }
     type[faith] = {
         path = "game/common/religion/religions"

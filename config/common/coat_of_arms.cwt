@@ -5,6 +5,10 @@ types = {
     type[coat_of_arms] = {
         # The double coat of arms is not a type
         path = "game/common/coat_of_arms/coat_of_arms"
+        images = {
+            ## primary
+            pattern = pattern # filepath
+        }
     }
 }
 
