@@ -3,8 +3,7 @@ types = {
         path = "game/common/culture/aesthetics_bundles"
 
         localisation = {
-            ## required
-            Name = "$_name"
+            name = "$_name"
         }
     }
 }

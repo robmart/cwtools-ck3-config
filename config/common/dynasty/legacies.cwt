@@ -2,17 +2,13 @@ types = {
 	type[legacy] = {
         path = "game/common/dynasty_legacies"
         localisation = {
-            ## required
-            ## primary
-            Name = "$_name"
+            name = "$_name"
 		}
 	}
 	type[dynasty_perk] = {
 		path = "game/common/dynasty_perks"
         localisation = {
-            ## required
-            ## primary
-            Name = "$_name"
+            name = "$_name"
 		}
 	}
 }

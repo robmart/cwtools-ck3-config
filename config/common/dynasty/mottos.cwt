@@ -2,9 +2,7 @@ types = {
     type[motto] = {
         path = "game/common/dynasty_house_mottos"
         localisation = {
-            ## required
-            ## primary
-            Name = "motto_$"
+            name = "motto_$"
 		}
     }
     type[motto_insert_group] = {
@@ -14,9 +12,7 @@ types = {
         path = "game/common/dynasty_house_motto_inserts"
         skip_root_key = any
         localisation = {
-            ## required
-            ## primary
-            Name = "motto_$"
+            name = "motto_$"
 		}
     }
 }

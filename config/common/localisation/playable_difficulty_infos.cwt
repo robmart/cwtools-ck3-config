@@ -3,7 +3,7 @@ types = {
         path = "game/common/playable_difficulty_infos"
 
         localisation = {
-            Name = "$"
+            name = "$"
         }
     }
 }

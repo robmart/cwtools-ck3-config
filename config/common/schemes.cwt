@@ -2,7 +2,6 @@ types = {
     type[scheme] = {
         path = "game/common/schemes"
         localisation = {
-            ## primary
             name = "$"
             action = "$_action"
         }

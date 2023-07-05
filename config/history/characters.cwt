@@ -3,8 +3,7 @@ types = {
         path = "game/history/characters"
 
         localisation = {
-            ## primary
-            Name = name
+            name = name
         }
     }
 }

@@ -6,11 +6,8 @@ types = {
         path = "game/common/bookmarks/groups"
 
         localisation = {
-            ## required
-            Name = "$"
-
-            ## required
-            Description = "$_desc"
+            name = "$"
+            desc = "$_desc"
         }
     }
 }

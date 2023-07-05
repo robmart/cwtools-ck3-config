@@ -3,7 +3,7 @@ types = {
         path = "game/common/messages"
 
         localisation = {
-            Name = "$"
+            name = "$"
         }
     }
 }

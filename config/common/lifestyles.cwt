@@ -2,14 +2,9 @@ types = {
     type[lifestyle] = {
         path = "game/common/lifestyles"
         localisation = {
-            ## required
-            ## primary
-            Name = "$_name"
-
-            ## required
-            Description = "$_desc"
-
-            HighlightDescription = "$_highlight_desc"
+            name = "$_name"
+            desc = "$_desc"
+            highlight_desc = "$_highlight_desc"
 		}
     }
 }
@@ -18,9 +13,7 @@ types = {
     type[lifestyle_perk] = {
         path = "game/common/lifestyle_perks"
         localisation = {
-            ## required
-            ## primary
-            Name = "$_name"
+            name = "$_name"
 		}
     }
 }

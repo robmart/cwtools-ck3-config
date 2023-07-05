@@ -3,7 +3,7 @@ types = {
     type[war_history] = {
         path = "game/history/wars"
         localisation = {
-            Name = name
+            name = name
         }
     }
 }

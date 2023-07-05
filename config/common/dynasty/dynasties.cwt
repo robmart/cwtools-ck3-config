@@ -2,17 +2,13 @@ types = {
 	type[dynasty] = {
 		path = "game/common/dynasties"
         localisation = {
-            ## required
-            ## primary
-			Name = name
+			name = name
 		}
 	}
 	type[house] = {
 		path = "game/common/dynasty_houses"
         localisation = {
-            ## required
-            ## primary
-			Name = name
+			name = name
 		}
 	}
 }
