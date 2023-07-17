@@ -105,8 +105,7 @@ alias[trigger:target_is_de_jure_liege_or_above] = scope[landed_title]
 alias[trigger:switch] = {
     trigger = alias_keys_field[trigger]
     ## cardinality = ~1..inf
-    # for key of this property, config will be overridden by:
-    # icu.windea.pls.lang.config.impl.ParadoxSwitchCaseOverriddenConfigProvider
+    # for key of this property, config will be overridden by: icu.windea.pls.lang.config.impl.ParadoxSwitchOverriddenConfigProvider
     scalar = { alias_name[trigger] = alias_match_left[trigger] }
     ## cardinality = ~1..1
     fallback = { alias_name[trigger] = alias_match_left[trigger] }
