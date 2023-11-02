@@ -93,7 +93,6 @@ alias[effect:expose_secret] = scope[character]
 alias[effect:switch] = {
     trigger = alias_keys_field[trigger]
     ## cardinality = 0..inf
-    # for key of this property, config will be overridden by: icu.windea.pls.lang.overridden.impl.ParadoxSwitchOverriddenConfigProvider
     scalar = { alias_name[effect] = alias_match_left[effect] }
     ## cardinality = 0..1
     fallback = { alias_name[effect] = alias_match_left[effect] }
