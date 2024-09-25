@@ -1772,3 +1772,14 @@ alias[trigger:any_dynasty_member] = {
     alias_name[trigger] = alias_match_left[trigger]
 }
 
+### Iterate through all traits a character has = { <count=num/all> / <percent=fixed_point> <triggers> }
+alias[trigger:any_character_trait] = {
+    ## cardinality = 0..1
+    percent = value_float[0.0..1.0]
+    ## cardinality = 0..1
+    count = int_value_field
+    ## cardinality = 0..1
+    count = all
+    alias_name[trigger] = alias_match_left[trigger]
+}
+

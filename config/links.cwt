@@ -586,7 +586,9 @@ links = {
         data_source = value[event_target]
         prefix = scope:
     }
+    ### Global link to title scope of given landed title template string
     title = {
+        desc = " Global link to title scope of given landed title template string"
         from_data = yes
         type = scope
         data_source = <landed_title>
@@ -600,6 +602,14 @@ links = {
 		type = both
         prefix = var:
         data_source = value[variable]
+    }
+	### Get the trait with the specified key
+    trait = {
+        desc = " Get the trait with the specified key"
+        from_data = yes
+        data_source = <trait>
+        prefix = trait:
+        output_scope = trait
     }
     inspiration = {
         input_scopes = inspiration

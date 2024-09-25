@@ -92,4 +92,7 @@ scopes = {
 	"Court Amenity Category" = {
 		aliases = { court_amenity_category "court amenity category" }
 	}
+	Trait = {
+		aliases = { trait }
+	}
 }
